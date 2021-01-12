@@ -50,8 +50,6 @@ jobs:
           git config --global user.name "github-actions"
 
       - name: Build And Push The Docker Image (CI Build)
-        env:
-          OVERLAY_VERSION: ${{ steps.variables.outputs.OVERLAY_VERSION }}
         run: |
           docker build \
             --platform=${PLATFORMS} \
@@ -66,8 +64,6 @@ jobs:
           curl -sSL https://raw.githubusercontent.com/hydazz/scripts/main/docker/docker-ci.sh | bash
 
       - name: Build And Push The Docker Image
-        env:
-          OVERLAY_VERSION: ${{ steps.variables.outputs.OVERLAY_VERSION }}
         run: |
           docker build \
             --platform=${PLATFORMS} \
