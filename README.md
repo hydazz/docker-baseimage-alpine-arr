@@ -6,7 +6,7 @@ A custom base image built with [Alpine Linux][appurl] and [s6 overlay][s6overlay
 
 ## Version Information
 
-![alpine](https://img.shields.io/badge/alpine-edge-0D597F?style=for-the-badge&logo=alpine-linux) ![s6 overlay](https://img.shields.io/badge/s6_overlay-2.1.0.2-blue?style=for-the-badge)
+![alpine](https://img.shields.io/badge/alpine-edge-0D597F?style=for-the-badge&logo=alpine-linux)
 
 See [package_versions.txt](package_versions.txt) for a full list of the packages and package versions used in this image
 
