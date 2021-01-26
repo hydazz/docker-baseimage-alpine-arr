@@ -69,3 +69,9 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: vcxpz/baseimage-alpine-arr
 
+      - name: Trigger Images
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+        run: |
+          curl -sSL https://raw.githubusercontent.com/hydazz/docker-utils/main/github/trigger_build.sh | bash
+
