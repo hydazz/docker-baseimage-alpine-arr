@@ -11,4 +11,5 @@ A custom base image built with [Alpine Linux][appurl] and [s6 overlay][s6overlay
 See [package_versions.txt](package_versions.txt) for a full list of the packages and package versions used in this image
 
 [appurl]: https://alpinelinux.org
+
 [s6overlay]: https://github.com/just-containers/s6-overlay
