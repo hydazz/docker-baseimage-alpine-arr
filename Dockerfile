@@ -2,7 +2,7 @@ FROM vcxpz/baseimage-alpine:latest
 
 RUN \
 	echo "**** install runtime packages ****" && \
-	apk add --no-cache --upgrade \
+	apk add --no-cache \
 		icu-libs \
 		libintl \
 		libmediainfo \
